@@ -53,3 +53,17 @@ func TestSquare(t *testing.T) {
 		})
 	}
 }
+
+
+
+func BenchmarkDivide(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Divide(25, 5)
+	}
+}
+
+func BenchmarkSquare(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Square(22)
+	}
+}
