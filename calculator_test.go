@@ -1,6 +1,7 @@
 package calculator
 
 import (
+	//"fmt"
 	"fmt"
 	"testing"
 )
@@ -13,10 +14,14 @@ func TestDivide(t *testing.T) {
 		expected int
 		err      bool
 	}{
-		{10, 2, 5, false},   // normal division
-		{5, 0, 0, true},     // division by zero
-		{-10, 2, -5, false}, // negative number
-		{10, -2, -5, false}, // negative divisor
+		{10, 2, 5, false},
+		// normal division
+		{5, 0, 0, true},
+		// division by zero
+		{-10, 2, -5, false},
+		// negative number
+		{10, -2, -5, false},
+		// negative divisor
 	}
 
 	for _, tt := range tests {
@@ -41,10 +46,14 @@ func TestSquare(t *testing.T) {
 		a        int
 		expected int
 	}{
-		{2, 4},       // positive number
-		{-2, 4},      // negative number
-		{0, 0},       // zero
-		{100, 10000}, // large number
+		{2, 4},
+		// positive number
+		{-2, 4},
+		// negative number
+		{0, 0},
+		// zero
+		{100, 10000},
+		// large number
 	}
 
 	for _, tt := range tests {
@@ -60,6 +69,7 @@ func TestSquare(t *testing.T) {
 func BenchmarkDivide(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Divide(25, 5)
+
 	}
 }
 

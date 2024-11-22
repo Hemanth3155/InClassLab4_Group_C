@@ -45,7 +45,7 @@ go test
 
 To run the benchmarks, use the following command:
 
-go test -bench .
+go test -bench=.
 
  Expected Output of the Tests
 
