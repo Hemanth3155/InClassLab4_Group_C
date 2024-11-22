@@ -76,4 +76,16 @@ The tests should pass successfully. The expected output for each test is as foll
      bash
      go test -bench .
 
+### output
+Example for test output
+     PASS
+     ok  	calculator	0.001s
+
+Example benchmark output:
+    BenchmarkDivide-8   	1000000000	         1.0 ns/op
+    BenchmarkSquare-8   	1000000000	         0.5 ns/op
+
+
+
+
 
