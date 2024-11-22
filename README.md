@@ -61,11 +61,6 @@ The tests should pass successfully. The expected output for each test is as foll
 - Test Design: Tests are designed to cover both normal and edge cases for the `Divide` and `Square` functions. For example, dividing by zero should result in an error, and squaring negative numbers should return a positive result.
 - Benchmark Design: Benchmarks are designed to measure the performance of the `Divide` and `Square` functions with representative inputs.
 
-## Contributions
-
-- [Group C]: Implemented the core logic and functions.
-- [Group C]: Wrote the tests and benchmarks, and contributed to the documentation.
-
 ### How to Execute
 
 1. To run the program:

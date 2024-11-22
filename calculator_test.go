@@ -6,6 +6,7 @@ import (
 )
 
 // TestDivide tests the Divide function for valid and invalid cases.
+
 func TestDivide(t *testing.T) {
 	tests := []struct {
 		a, b     int
@@ -30,10 +31,12 @@ func TestDivide(t *testing.T) {
 			}
 		})
 	}
+
 }
 
 // TestSquare tests the Square function.
 func TestSquare(t *testing.T) {
+
 	tests := []struct {
 		a        int
 		expected int
@@ -53,8 +56,6 @@ func TestSquare(t *testing.T) {
 		})
 	}
 }
-
-
 
 func BenchmarkDivide(b *testing.B) {
 	for i := 0; i < b.N; i++ {
